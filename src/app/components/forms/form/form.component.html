@@ -1,0 +1,15 @@
+<form class="form">
+  <app-text-field
+    *ngFor="let field of textFields"
+    [input-type]="field.type"
+    [placeHolder]="field.placeHolder"
+    [isRequired]="field.isRequired">
+  </app-text-field>
+
+
+  <app-button
+    *ngFor="let button of buttons"
+    [buttonType]="button.type"
+    [value]="button.value">
+  </app-button>
+</form>

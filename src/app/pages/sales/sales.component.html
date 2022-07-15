@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="sales-container">
+  <div class="bar">
+    <span>
+      <app-text-field input-type="number" placeHolder="Find product by Barcode..." (value)="setValue($event)">
+      </app-text-field>
+    </span>
+  </div>
+  <div class="sales-body">
+    <app-product-card *ngFor="let product of products" [product]="product"></app-product-card>
+  </div>
+
+  <div class="bar">
+    Amount: C$ {{getTotalAmount()}}
+  </div>
+
+  <div class="control-panel">
+    <span class="keyboard">
+      <button (click)="clean()" class="heigher-and-squared">Clean</button>
+      <button (click)="sendData()" class="heigher-and-squared">Checkout</button>
+    </span>
+  </div>
+
+</div>
+
+<aside class="history-sales">
+  <h3>Todays sales</h3>
+  <hr>
+  <ul>
+    <li *ngIf="todayOrders.length < 1; else sales">
+      There are not sales yet........................ kj:(
+    </li>
+
+    <ng-template #sales>
+      <li *ngFor="let sale of todayOrders">Sales for: <strong>{{sale.amount | currency}}</strong> <hr> </li>
+    </ng-template>
+
+  </ul>
+</aside>

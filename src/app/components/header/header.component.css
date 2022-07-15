@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: white;
+  background-color: rgb(19, 19, 209);
+  height: 80px;
+  box-shadow: 0px 4px 4px 4px rgba(1, 1, 39, 0.37);
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}

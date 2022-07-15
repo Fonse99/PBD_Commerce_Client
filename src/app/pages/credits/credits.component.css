@@ -1,0 +1,51 @@
+.credit-item li{
+  list-style: none;
+  display: inline;
+  padding-right: 10px;
+  color: white;
+}
+.credit-item ul {
+  padding: 5px;
+}
+
+.credit-item {
+  height: 50px;
+  background-color: #1C84BF;
+  border-radius: 10px;
+}
+
+.credit-list-container {
+  width: 80%;
+  height: 80%;
+  margin-top: 20px;
+  overflow: scroll ;
+}
+
+.search-bar {
+  text-indent: 10px;
+ background-color: #1C84BF;
+ color: white;
+ width: 90%;
+ border-radius: 10px;
+ margin-top: 10px;
+}
+
+.credit-general-container {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: baseline;
+  align-items: center;
+  margin: auto;
+  box-shadow: 0px 0px 3px 4px rgba(0,0,0, 0.25);
+  height: 80%;
+  width: 550px;
+}
+
+.credit-body {
+  background: linear-gradient(117.57deg, #0331D6 8.16%, rgba(36, 211, 159, 0.18) 88.23%);
+  height: 650px;
+}

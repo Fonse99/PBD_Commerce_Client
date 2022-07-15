@@ -1,0 +1,27 @@
+<app-header></app-header>
+<!-- <nav class="tool-bar">
+  <li>New</li>
+</nav> -->
+<div class="inventory-container">
+
+  <div class="inventory-body">
+
+    <div class="product-list">
+      <app-product-card></app-product-card>
+    </div>
+  </div>
+</div>
+<aside class="sidebar">
+  <img [src]="productToSave" />
+  <input [(ngModel)]="productToSave.image" placeholder="Image path..." />
+  <input [(ngModel)]="productToSave.name" placeholder="title..." />
+  <input [(ngModel)]="productToSave.barcode" placeholder="barcode..." />
+  <input [(ngModel)]="productToSave.detail.costPrice" placeholder="cost..." />
+  <input [(ngModel)]="productToSave.detail.price" placeholder="price..." />
+  <input [(ngModel)]="productToSave.detail.quantity" placeholder="quantity..." />
+  <input [(ngModel)]="productToSave.detail.dueDate" placeholder="Due date..." />
+  <input [(ngModel)]="productToSave.measurement" placeholder="measurement..." />
+  <input [(ngModel)]="productToSave.detail.provider.name" placeholder="Provider Name..." />
+  <input [(ngModel)]="productToSave.detail.provider.phone" placeholder="Provider phone..." />
+  <button (click)="sendData()">Create</button>
+</aside>

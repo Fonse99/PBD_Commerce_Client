@@ -1,0 +1,16 @@
+.separate {
+  margin-block: 10px;
+}
+
+.btn-rounded {
+  border-radius: 10px;
+}
+
+.btn-secondary {
+  background-color: #FFF614;
+  box-shadow: rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #12438C;
+  height: 30px;
+  width: 300px;
+}

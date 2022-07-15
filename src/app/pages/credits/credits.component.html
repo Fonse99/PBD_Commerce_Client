@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="credit-body">
+  <div class="credit-general-container">
+    <div class="search-bar">
+      All credits <app-text-field placeHolder="search by DNI or name..."></app-text-field>
+      <button>New Credit</button>
+    </div>
+    <div class="credit-list-container">
+      <div class="credit-item" *ngFor="let credit of credits">
+        <ul>
+          <li>{{credit.firstName}}</li>
+          <li>{{credit.amount}}</li>
+        </ul>
+        <button type="button">Pay</button>
+        <button type="button">Desposit</button>
+      </div>
+  </div>
+    </div>
+
+</div>

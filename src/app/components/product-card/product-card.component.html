@@ -1,0 +1,12 @@
+<div class="card-container">
+  <img [src]="product.image" alt="" class="picture">
+  <div class="product-info">
+    <ul>
+      <li>{{product.name}}</li>
+      <li>{{product.barcode}}</li>
+      <li>{{product.detail.quantity}}  Units</li>
+      <li>C$ {{product.detail.price}}</li>
+      <li>C$ {{getTotalAmount()}}</li>
+    </ul>
+  </div>
+</div>

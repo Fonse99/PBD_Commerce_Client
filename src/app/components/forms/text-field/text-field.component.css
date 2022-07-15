@@ -1,0 +1,8 @@
+.separate {
+  margin-block: 10px;
+
+  /*otra clase*/
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+}
